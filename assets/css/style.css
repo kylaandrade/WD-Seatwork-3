@@ -84,6 +84,8 @@ video {
 
       a {
         text-decoration: none;
+        position: relative;
+        z-index: 2;
       }
 
       i {
@@ -93,26 +95,26 @@ video {
 
         &.bi-github {
           transform: translateY(-3.5rem);
-          transition: all 0.3s ease;
+          transition: all 0.4s ease;
           color: transparent;
         }
 
         &.bi-envelope {
-          transform: translateY(-5.5rem);
-          transition: all 0.3s ease;
+          transform: translateY(-3.5rem);
+          transition: all 0.4s ease;
           color: transparent;
         }
       }
 
       &:hover {
         .paimon {
-          transform: rotateZ(720deg);
+          transform: rotateZ(360deg);
         }
 
         i.bi-github,
         i.bi-envelope {
           transform: translateY(0);
-          color: white;
+          color: #f5fd7fd0;
         }
       }
     }
@@ -126,8 +128,8 @@ video {
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    margin-bottom: 0;
     margin-left: -300px;
+  }
 
     h1 {
       font-size: 4rem;
