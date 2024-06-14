@@ -68,13 +68,10 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 1rem;
-
-    &:hover {
-      background-color: #e0e0e0;
     }
   }
 }
-}
+
 
 .design-two {
   display: flex;
@@ -327,19 +324,23 @@ header.design-one-animation {
   overflow: hidden;
 }
 
-.logo {
+.glogo {
   display: flex;
   align-items: center;
   animation: logo-bounce 2s ease-in-out infinite;
 }
 
-.logo img {
+.glogo img {
   height: 70px;
   margin-right: 1rem;
-  animation: logo-spin 3s linear infinite;
 }
 
-nav a {
+.d1-nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.d1-nav-container nav a {
   color: #333;
   text-decoration: none;
   margin: 0 1rem;
@@ -347,7 +348,7 @@ nav a {
   transition: color 0.3s ease-in-out;
 }
 
-nav a:before {
+.d1-nav-container nav a:before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -358,15 +359,15 @@ nav a:before {
   transition: width 0.3s ease-in-out;
 }
 
-nav a:hover {
+.d1-nav-container nav a:hover {
   color: #3C5889;
 }
 
-nav a:hover:before {
+.d1-nav-container nav a:hover:before {
   width: 100%;
 }
 
-nav a.button {
+.d1-nav-container nav a.gbutton {
   background-color: #3C5889;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -374,7 +375,7 @@ nav a.button {
   animation: button-bounce 1s ease-in-out infinite;
 }
 
-nav a.button:hover {
+.d1-nav-container nav a.gbutton:hover {
   background-color: #5A8DD3;
 }
 
@@ -397,73 +398,107 @@ nav a.button:hover {
 }
 
 header.design-two-animation {
-  width: 100vw;
   display: flex;
+  width: 100vw;
   justify-content: space-between;
-  padding: 0 10vw;
-  height: calc(50px + 1rem);
   align-items: center;
-  background: rgb(252, 240, 218);
+  padding: 1rem 5vw;
+  align-items: center;
+  background: #C4C1C6;
+  box-shadow: 0 5px #b2766d;
+  border: 2px #C6513F solid;
+  overflow: hidden;
+}
 
-  & > .pop-up {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.d2-logo {
+  display: flex;
+  align-items: center;
+}
 
-    &:hover {
-      & > img.company-logo {
-        transform: rotateZ(720deg);
-      }
+.d2-logo img {
+  height: 60px;
+  margin-right: 0.5rem;
+}
 
-      & > h1 {
-        color: black;
-        transform: translateX(0);
-      }
-    }
+.d2-logo h1 {
+  font-size: 2rem;
+}
 
-    & > img.company-logo {
-      height: 50px;
-      padding: 0.2rem 0;
-      transition: all 0.3s ease;
-    }
+.d2-logo:hover {
+  animation: logo-scale 1.2s;
+}
 
-    & > h1 {
-      color: transparent;
-      transform: translateX(-5rem);
-      transition: all 0.3s ease;
-    }
+.d2-nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.d2-nav-container nav {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.d2-nav-container nav a {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  font-size: 1.3rem;
+  position: relative;
+  overflow: hidden;
+  animation: link-slide 0.5s ease forwards;
+}
+
+.d2-nav-container nav a.active,
+.d2-nav-container nav a:hover {
+  color: #C6513F;
+}
+
+.d2-nav-container nav a img {
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.d2-order-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #C6513F;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: auto;
+  animation: button-scale 1s ease-in-out infinite;
+}
+
+@keyframes logo-scale {
+  0% {
+    transform: scale(1);
   }
+  100% {
+    transform: scale(1.1);
+  }
+}
 
-  & > nav.navigation {
-    display: flex;
-    align-items: center;
-    height: 100%;
+@keyframes link-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
-    & > a.navigation-content {
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: black;
-      transition: 0.2s ease;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 0 1rem;
-      border: 1px transparent solid;
-
-      &:hover {
-        background: rgb(255, 229, 79);
-        transform: translate(-10px, -10px);
-        box-shadow: 10px 10px 0px 0px rgb(107, 98, 43);
-        border: 1px rgb(0, 0, 0) solid;
-      }
-
-      &:active {
-        background: rgb(252, 217, 21);
-        transform: translate(0px, 0px);
-        box-shadow: 0px 0px 0px 0px rgb(107, 98, 43);
-        border: 1px transparent solid;
-      }
-    }
+@keyframes button-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
   }
 }
 
