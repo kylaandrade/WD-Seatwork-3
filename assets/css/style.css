@@ -40,26 +40,16 @@ video {
   justify-content: center;
   height: 150%;
   width: 200%;
-  margin-top: -50px;
-  margin-left: -100px;
-
-  background: -webkit-linear-gradient(
-    -10deg,
-    #ffffff00 0%,
-    #ffffff00 26%,
-    #4900a87a 26%,
-    #4900a87a 100%
-  );
-  background-size: 40% 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-  margin-right: -20px;
+}
 
   .shogun {
-    width: 400%;
+    max-width: 90%;
+    max-height: 40%;
     margin-right: -200px;
-    margin-bottom: -230px;
-    height: auto;
+    margin-bottom: -100px;
+    object-fit: cover;
+    position: relative;
+    height: 45%;;
   }
 
   .genshin {
@@ -80,6 +70,7 @@ video {
     .paimon {
         height: clamp(5rem, 5vw, 3rem);
       transition: all 0.2s ease;
+      z-index: 1;
     }
 
     .socials {
@@ -136,9 +127,10 @@ video {
     align-items: flex-start;
     text-align: left;
     margin-bottom: 0;
+    margin-left: -300px;
 
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       line-height: 1.2;
       margin-bottom: 1rem;
     }
