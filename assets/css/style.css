@@ -11,6 +11,12 @@ h1 * {
   font-family: "Merriweather", serif;
 }
 
+h2,
+h2 * {
+  font-family: "Merriweather", serif;
+}
+
+
 body, html {
   overflow: hidden;
   width: 100%;
@@ -132,7 +138,15 @@ video {
   }
 
     h1 {
+      color: #f5fd7fd0;
       font-size: 4rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      color: #f5fd7fd0;
+      font-size: 2.5rem;
       line-height: 1.2;
       margin-bottom: 1rem;
     }
@@ -151,16 +165,34 @@ video {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #3f00c679;
-    color: #000000;
+    background-color: #f5fd7fd0;
+    color: rgb(51, 29, 147);
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
   .button:hover {
-    background-color: #e0e0e0;
+    border: 1px solid;
+    box-shadow: inset 0 0 10px rgb(51, 29, 147), 0 0 10px rgb(255, 255, 255);
+    outline-color: rgb(255, 255, 255);
+    outline-offset: 5px;
+    text-shadow: 1px 1px 2px #ffffff;
+    transform: scale(1.1);
+    animation: pop 0.3s ease-in-out;
+  }
+
+  @keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1.1);
+    }
   }
