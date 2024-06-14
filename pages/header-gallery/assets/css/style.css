@@ -31,25 +31,50 @@ header.design-one {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  padding: 0.7rem 10vw;
-  background: wheat;
+  align-items: center;
+  padding: 1rem 5vw;
+  background: linear-gradient(to right, #ebf09983, rgba(3, 139, 174, 0.6));
 
-  & > img.company-logo {
-    height: 50px;
-  }
-
-  & > nav.navigation {
+  .logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    img {
+      height: 70px;
+      margin-right: 1rem;
+    }
+  }
 
-    & > a.navigation-content {
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: black;
+  nav {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: #0a092c;
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-size: 1.3rem;
+      transition: color 0.3s ease;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #ecf099;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 1rem;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
     }
   }
 }
+
 
 /* Nested Specific Class */
 .design-two {
