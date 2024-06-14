@@ -81,28 +81,59 @@ header.design-one {
   display: flex;
   width: 100vw;
   justify-content: space-between;
-  padding: 0.7rem 10vw;
   align-items: center;
-  background: black;
-
-  & > .navigation {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-
-    & > .navigation-content {
-      color: aliceblue;
-      font-weight: 800;
-      font-size: 1.2rem;
-    }
-
-    & > .call-to-action {
-      border: 1px white solid;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-    }
-  }
+  padding: 1rem 5vw;
+  align-items: center;
+  background: #C4C1C6;
 }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 60px;
+    margin-right: 0.5rem;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+  }
+
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  nav a img {
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+
+  .order-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #C6513F;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left:auto;
+  }
 
 /* Non-Nested Non-Specific Class */
 .design-three {
