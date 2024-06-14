@@ -319,40 +319,80 @@ header.design-one-animation {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  padding: 0 10vw;
-  height: calc(50px + 1rem);
   align-items: center;
-  background: rgb(252, 240, 218);
+  padding: 1rem 5vw;
+  background: linear-gradient(to right, #ebf09983, rgba(3, 139, 174, 0.6));
+  box-shadow: 0 5px #5A8DD3;
+  border: 2px #3C5889 solid;
+  overflow: hidden;
+}
 
-  & > img.company-logo {
-    height: 50px;
-    padding: 0.2rem 0;
-    transition: all 0.3s ease;
+.logo {
+  display: flex;
+  align-items: center;
+  animation: logo-bounce 2s ease-in-out infinite;
+}
 
-    &:hover {
-      transform: rotateZ(720deg);
-    }
+.logo img {
+  height: 70px;
+  margin-right: 1rem;
+  animation: logo-spin 3s linear infinite;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 1rem;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3C5889;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #3C5889;
+}
+
+nav a:hover:before {
+  width: 100%;
+}
+
+nav a.button {
+  background-color: #3C5889;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  animation: button-bounce 1s ease-in-out infinite;
+}
+
+nav a.button:hover {
+  background-color: #5A8DD3;
+}
+
+@keyframes logo-bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 
-  & > nav.navigation {
-    display: flex;
-    align-items: center;
-    height: 100%;
-
-    & > a.navigation-content {
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: black;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 0 1rem;
-      transition: 0.2s ease;
-
-      &:hover {
-        background: rgb(255, 229, 79);
-      }
-    }
+@keyframes button-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
   }
 }
 
