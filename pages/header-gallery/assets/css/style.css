@@ -503,94 +503,116 @@ header.design-two-animation {
 }
 
 .design-three-animation {
+  background: linear-gradient(to right, #E9C28E, #e0e0e0);
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 2rem;
+  align-items: center;
   width: 100vw;
-  box-shadow: 0 10px rgba(124, 124, 124, 0.534);
-  padding: 1.5rem 0;
-  border: 1px black solid;
+  justify-content: center;
+  padding: 0.7rem 0;
+  box-shadow: 0 10px 0px 0px rgb(33, 16, 1);
+  -webkit-box-shadow: 0 10px 0px 0px rgb(33, 16, 1);
+  -moz-box-shadow: 0 10px 0px 0px rgb(33, 16, 1);
+  border: 1px solid rgb(33, 16, 1);
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease-in-out;
+}
 
-  &:hover .company-logo:not(:hover),
-  &:hover .navigation-content:not(:hover) {
-    transform: scale(0.85);
-  }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-  &:hover .navigation-content:not(:hover) {
-    opacity: 0.7;
-  }
+.r3-left-links, .r3-right-links {
+  display: flex;
+  align-items: center;
+  margin: 0 10rem;
+  margin-right: 25px;
+  margin-left: 6px;
+  gap: 21.5rem;
+}
 
-  & .company-logo {
-    height: 70px;
-    transition: 0.3s ease;
+.r3-left-links a, .r3-right-links a {
+  color: rgb(33, 16, 1);
+  text-decoration: none;
+  margin-right: -19.5rem;
+  font-size: 1.2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
 
-    &:hover {
-      filter: drop-shadow(5px 5px 5px rgb(141, 141, 141));
-    }
-  }
+.r3-left-links a:before, .r3-right-links a:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #b6741f;
+  transition: width 0.3s ease-in-out;
+}
 
-  & .navigation {
-    display: flex;
-    gap: 1rem;
-  }
+.r3-left-links a.active:before, .r3-right-links a.active:before {
+  width: 100%;
+}
 
-  & .navigation-content {
-    color: black;
-    font-weight: 700;
-    font-size: 1.2rem;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+.r3-left-links a:hover, .r3-right-links a:hover {
+  background-color: #b6741f;
+  transform: translate(2px,2px);
+  box-shadow: 5px 5px 0px 0px #a0835d;
+  border: 1px white solid;
+  border-radius: 3rem;
+}
 
-    &::before {
-      background: #57575783;
-      width: 0;
-      height: 20px;
-      content: "";
-      display: block;
-      position: relative;
-      top: 20px;
-      right: 5px;
-      transition: 0.3s ease;
-      z-index: -1;
-    }
+.d3-logo {
+  display: flex;
+  justify-content: center;
+  margin-left: 330px;
+  margin-right: 50px;
+}
 
-    &:hover {
-      &.blue {
-        border-bottom: 3px solid blue;
-        &::before {
-          width: 10px;
-          background: #4ca9ff83;
-        }
-      }
+.d3-logo img {
+  height: 70px;
+  animation: bounce 1s infinite;
+}
 
-      &.red {
-        border-bottom: 3px solid red;
-        &::before {
-          width: 10px;
-          background: #ff4c4c83;
-        }
-      }
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
 
-      &.violet {
-        border-bottom: 3px solid violet;
-        &::before {
-          width: 10px;
-          background: #f94cff83;
-        }
-      }
+.phone-link, .resident-link {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
 
-      &.green {
-        border-bottom: 3px solid green;
-        &::before {
-          width: 10px;
-          background: #5bff4c83;
-        }
-      }
-    }
-  }
+.phone-link img, .resident-link img {
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.r3-meeting {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b6741f;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+}
+
+.r3-meeting:hover {
+  background-color: #b6741f;
+  transform: translate(2px,2px);
+  box-shadow: 5px 5px 0px 0px #a0835d;
+  border: 1px white solid;
+  border-radius: 3rem;
 }
 
 .design-four-animation {
