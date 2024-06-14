@@ -13,22 +13,9 @@ h1 * {
   font-family: "Merriweather", serif;
 }
 
-/* Dev */
-.pokemon,
-.pokemon * {
-  /* outline: 1px dashed red; */
-}
-
-.content,
-.content * {
-  /* outline: 3px dotted gold; */
-}
-
 /* Dep */
 body {
-  background: linear-gradient(75deg, #9ba8ce 0%, #6400a7 100%);
-  background: -moz-linear-gradient(75deg, #9ba8ce 0%, #6400a7 100%);
-  background: -webkit-linear-gradient(75deg, #9ba8ce 0%, #6400a7 100%);
+  background: #20122A
 }
 
 video {
@@ -69,9 +56,9 @@ video {
     #4900a87a 100%
   );
 
-  & > .pokemon {
+  & > .genshin {
     width: 40%;
-    border-right: 2px rgb(76, 92, 184) solid;
+    border-right: 2px rgb(30, 4, 54) solid;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -85,12 +72,12 @@ video {
       height: clamp(2rem, 10vw, 10%);
     }
 
-    & .pokeball {
+    & .paimon {
         height: clamp(2rem, 5vw, 3rem);
       transition: all 0.2s ease;
     }
 
-    & .gengar {
+    & .shogun {
       width: 100%;
       object-fit: cover;
       transition: all 0.5s ease;
@@ -128,7 +115,7 @@ video {
       }
 
       &:hover {
-        .pokeball {
+        .paimon {
           transform: rotateZ(720deg);
         }
 
