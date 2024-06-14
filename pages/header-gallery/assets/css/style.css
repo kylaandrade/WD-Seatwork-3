@@ -143,10 +143,10 @@ header.design-one {
   width: 100vw;
   justify-content: center;
   padding: 0.7rem 0;
-  box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 1);
-  -webkit-box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 1);
-  border: 1px solid black;
+  box-shadow: 0 10px 0px 0px rgb(33, 16, 1);
+  -webkit-box-shadow: 0 10px 0px 0px rgb(33, 16, 1);
+  -moz-box-shadow: 0 10px 0px 0px rgb(33, 16, 1);
+  border: 1px solid rgb(33, 16, 1);
   border-radius: 5px;
 }
 .left-links, .right-links {
@@ -160,7 +160,7 @@ header.design-one {
 
 
 .left-links a, .right-links a {
-  color: #000000;
+  color: rgb(33, 16, 1);
   text-decoration: none;
   margin-right: -18.5rem;
 
