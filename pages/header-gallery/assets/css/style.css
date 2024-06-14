@@ -26,7 +26,6 @@ section {
   align-items: flex-end;
 }
 
-/* Nested Specific */
 header.design-one {
   width: 100vw;
   display: flex;
@@ -75,8 +74,6 @@ header.design-one {
   }
 }
 
-
-/* Nested Specific Class */
 .design-two {
   display: flex;
   width: 100vw;
@@ -135,9 +132,8 @@ header.design-one {
     margin-left:auto;
   }
 
-/* Non-Nested Non-Specific Class */
 .design-three {
-  background:linear-gradient(to right, #E9C28E, #e0e0e0);;
+  background:linear-gradient(to right, #E9C28E, #e0e0e0);
   display: flex;
   align-items: center;
   width: 100vw;
@@ -202,34 +198,61 @@ header.design-one {
   color:rgb(255, 255, 255);
 }
 
-
-/* Nested Non-Specific Class */
 .design-four {
+  background:linear-gradient(to left, #97c0cefd, #e0e0e0);
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   gap: 2rem;
   width: 100vw;
-  box-shadow: 0 10px rgba(124, 124, 124, 0.534);
-  padding: 1.5rem 0;
-  border: 1px black solid;
+  box-shadow: 0 10px #c79755;
+  padding: 1rem 5vw;
+  border: 2px #b37d33 solid;
+}
 
-  & .company-logo {
-    height: 70px;
-  }
+.logo-name {
+  display: flex;
+  align-items: center;
+}
 
-  & .navigation {
-    display: flex;
-    gap: 1rem;
-  }
+.logo-name img {
+  height: 50px;
+  margin-right: 10px;
+}
 
-  & .navigation-content {
-    color: black;
-    font-weight: 700;
-    font-size: 1.2rem;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
+.logo-name h1 {
+  font-size: 32px;
+  margin: 0;
+  color: #b37d33;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons a {
+  color: #070707;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-right: 1px solid #b37d33;
+  font-size: 20px;
+}
+
+.buttons a:last-child {
+  border-right: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #b37d33;
+  padding-left: 10px;
+}
+
+.icons img {
+  height: 24px;
+  margin-left: 10px;
 }
 
 .design-five {
