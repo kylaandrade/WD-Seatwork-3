@@ -4,8 +4,8 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  <a href="https://github.com/kylaandrade/">
+    <img src="./assets/img/heartLogo.png" alt="Heart" width="130" height="100">
   </a>
   <h3 align="center">Seatwork 3: Footer & Header</h3>
 </div>
@@ -101,5 +101,14 @@ WD-ProjectName
 ## Resources
 
 | Title | Purpose | Link |
-|-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Logo | Picture for ReadMe | https://www.canva.com |
+| Raiden Shogun | Picture for Landing Page | https://screenrant.com |
+| Paimon | Icon for Landing Page | https://www.redbubble.com |
+| Genshin Impact | Logo for Landing Page | https://logos-world.net |
+| Genshin Impact | Logo for Landing Page | https://logos-world.net |
+| Lantern Festival | Logo for Header Page | https://genshin-impact.fandom.com |
+| Waypoint | Logo for Header Page and Footer Page | https://genshin-impact.fandom.com |
+| Knights of Favonius | Logo for Header Page and Footer Page | https://genshin-impact.fandom.com |
+| Angels Share | Logo for Header Page and Footer Page | https://genshin-impact.fandom.com |
+| Icons | Icons for Header and Footer Page | https://www.canva.com |
+| Paimon | Logo for Footer Page | https://genshin-impact.fandom.com |
