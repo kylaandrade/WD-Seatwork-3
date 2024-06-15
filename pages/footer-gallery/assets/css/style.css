@@ -881,3 +881,301 @@ section.design-eight {
 .d3-pulse {
   animation: d3-pulse 2s ease-in-out infinite;
 }
+
+section.design-nine {
+    background-image: url('/pages/footer-gallery/assets/img/waypoint-bg.png');
+    padding: 8px 0;
+    position: relative;
+}
+
+.d4waypoint-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.d4waypoint-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d4waypoint-menu-social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 600px;
+}
+
+.d4waypoint-menu h4,
+  .d4waypoint-social h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.d4waypoint-menu ul,
+.d4waypoint-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.d4waypoint-menu ul li {
+    position: relative;
+    overflow: hidden;
+}
+
+.d4waypoint-menu ul li a {
+    display: block;
+    padding: 5px 0;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.d4waypoint-menu ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #48a7f0a4;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.d4waypoint-menu ul li:hover::before {
+    transform: translateX(0);
+}
+
+.d4waypoint-menu ul li:hover a {
+    color: #000;
+}
+
+.d4waypoint-social ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.d4waypoint-social ul li a:hover {
+    color: #666;
+}
+
+.d4waypoint-social ul li img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.d4waypoint-social ul li a:hover img {
+    transform: scale(1.2);
+}
+
+.d4waypoint-description-logo {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 50px;
+}
+
+.d4waypoint-logo {
+    margin-right: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.d4waypoint-logo img {
+    max-width: 105px;
+}
+
+.d4waypoint-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.d4waypoint-text p:hover {
+    color: #333;
+}
+
+.d4waypoint-copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.d4waypoint-copyright:hover {
+    color: #333;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+section.design-ten {
+  background-image: url('/pages/footer-gallery/assets/img/lantern-bg-2.png');
+  color: #fff;
+  padding: 30px 0;
+}
+
+.d5lantern-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 5px;
+}
+
+.d5lantern-left {
+  flex-basis: 40%;
+}
+
+.d5lantern-left h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.d5lantern-left p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out 0.5s;
+}
+
+.d5social-icons-5 {
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out 1s;
+}
+
+.d5social-icons-5 a {
+  display: inline-block;
+  margin-right: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.d5social-icons-5 a:hover {
+  transform: scale(1.2);
+}
+
+.d5social-icons-5 img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease-in-out;
+}
+
+.d5social-icons-5 a:hover img {
+  filter: none;
+}
+
+.d5lantern-right {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.d5stream-container,
+.d5booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.d5stream-container:hover,
+.d5booking-container:hover {
+  animation: pulse 1s infinite;
+}
+
+.d5stream-icon,
+.d5booking-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.d5stream-icon:hover,
+.d5booking-icon:hover {
+  transform: scale(1.2);
+}
+
+.d5stream-icon img,
+.d5booking-icon img {
+  width: 50px;
+  height: 50px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.d5stream-icon:hover img,
+.d5booking-icon:hover img {
+  filter: brightness(0.7);
+}
+
+.d5stream-container p,
+.d5booking-container p {
+  font-size: 18px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

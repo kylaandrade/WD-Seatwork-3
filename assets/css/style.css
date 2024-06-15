@@ -48,45 +48,45 @@ video {
   width: 200%;
 }
 
-  .shogun {
-    max-width: 90%;
-    max-height: 40%;
-    margin-right: -200px;
-    margin-bottom: -100px;
-    object-fit: cover;
-    position: relative;
-    height: 45%;;
-  }
+.shogun {
+  max-width: 90%;
+  max-height: 40%;
+  margin-right: -200px;
+  margin-bottom: -100px;
+  object-fit: cover;
+  position: relative;
+  height: 45%;;
+}
 
-  .genshin {
-    width: 60%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.genshin {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-    .title {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      height: clamp(2rem, 10vw, 10%);
-    }
+.title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: clamp(2rem, 10vw, 10%);
+}
 
-    .paimon {
-        height: clamp(5rem, 5vw, 3rem);
-      transition: all 0.2s ease;
-      z-index: 1;
-    }
+.paimon {
+  height: clamp(5rem, 5vw, 3rem);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
 
-    .socials {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: clamp(1rem, 1vw, 2rem);
-      right: clamp(1rem, 1vw, 2rem);
-      gap: 0.5rem;
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: clamp(1rem, 1vw, 2rem);
+  right: clamp(1rem, 1vw, 2rem);
+  gap: 0.5rem;
 
       a {
         text-decoration: none;
@@ -124,68 +124,68 @@ video {
         }
       }
     }
-  }
+}
 
-  .content {
-    display: flex;
-    flex: 1;
-    width: 70%;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    margin-left: -300px;
-  }
+.content {
+  display: flex;
+  flex: 1;
+  width: 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: -300px;
+}
 
-    h1 {
-      color: #f5fd7fd0;
-      font-size: 4rem;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
+h1 {
+  color: #f5fd7fd0;
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
 
-    h2 {
-      color: #f5fd7fd0;
-      font-size: 2.5rem;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
+h2 {
+  color: #f5fd7fd0;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
 
-    p {
-      font-size: 1.2rem;
-      line-height: 1.5;
-      margin-bottom: 1rem;
-    }
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
 
-  .buttons {
-    margin-top: 20px;
-  }
+.buttons {
+  margin-top: 20px;
+}
 
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #f5fd7fd0;
-    color: rgb(51, 29, 147);
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #f5fd7fd0;
+  color: rgb(51, 29, 147);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-  .button:hover {
-    border: 1px solid;
-    box-shadow: inset 0 0 10px rgb(51, 29, 147), 0 0 10px rgb(255, 255, 255);
-    outline-color: rgb(255, 255, 255);
-    outline-offset: 5px;
-    text-shadow: 1px 1px 2px #ffffff;
-    transform: scale(1.1);
-    animation: pop 0.3s ease-in-out;
-  }
+.button:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 10px rgb(51, 29, 147), 0 0 10px rgb(255, 255, 255);
+  outline-color: rgb(255, 255, 255);
+  outline-offset: 5px;
+  text-shadow: 1px 1px 2px #ffffff;
+  transform: scale(1.1);
+  animation: pop 0.3s ease-in-out;
+}
 
-  @keyframes pop {
+@keyframes pop {
     0% {
       transform: scale(1);
     }
@@ -195,4 +195,4 @@ video {
     100% {
       transform: scale(1.1);
     }
-  }
+}
