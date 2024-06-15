@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/kylaandrade/">
-    <img src="./assets/img/heartLogo.png" alt="Heart" width="200" height="200">
+    <img src="./assets/img/heart-logo.png" alt="Heart" width="200" height="200">
   </a>
   <h3 align="center">Seatwork 3: Footer & Header</h3>
 </div>
