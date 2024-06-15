@@ -300,3 +300,85 @@ section.design-three {
     margin: 0;
     color: #501403;
 }
+
+section.design-four {
+    background-image: url('/pages/footer-gallery/assets/img/waypoint-bg.png');
+    padding: 8px 0;
+    position: relative;
+}
+
+.waypoint-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.waypoint-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.waypoint-menu-social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right:600px;
+}
+
+.waypoint-menu h4,
+.waypoint-social h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.waypoint-menu ul,
+.waypoint-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.waypoint-menu ul li a,
+.waypoint-social ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.waypoint-social ul li img {
+    width: 20px;
+    height: 20px;
+}
+
+.waypoint-description-logo {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 50px;
+}
+
+.waypoint-logo {
+    margin-right: 10px;
+}
+
+.waypoint-logo img {
+    max-width: 105px;
+}
+
+.waypoint-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.waypoint-copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+}
