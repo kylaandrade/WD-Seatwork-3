@@ -121,7 +121,7 @@ section.design-one {
 }
 
 section.design-two {
-    background-color: #501403;
+    background-image: url('/pages/footer-gallery/assets/img/tavern-bg.png');
     color: #fff;
     padding: 40px 0;
     width: 100%;
@@ -175,3 +175,128 @@ section.design-two {
     text-decoration: none;
 }
 
+section.design-three {
+    background-image: url('/pages/footer-gallery/assets/img/knights-bg.png');
+    color: #fff;
+    padding: 40px 0;
+    width: 100%;
+    position: static;
+    bottom: 0;
+    left: 0;
+}
+
+.knights-footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.knights-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+  .knights-footer-left {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.knights-logo-container img {
+    max-width: 100px;
+    height: auto;
+}
+
+.org-name h3 {
+    margin: 0;
+    font-size: 25px;
+    color: #501403;
+}
+
+.knights-footer-center {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    margin-left: -185px;
+}
+
+.email-subscribe {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.email-subscribe input {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    background-color: #C89B79;
+}
+
+.email-subscribe button {
+    background-color: #C89B79;
+    color: #501403;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.knights-footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 20px;
+    color: #501403;
+}
+
+.knights-footer-right h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.knights-social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.knights-social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.knights-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #501403;
+    width: 100%;
+}
+
+.knights-footer-links {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.knights-footer-links a {
+    color: #501403;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.copyright p {
+    margin: 0;
+    color: #501403;
+}
