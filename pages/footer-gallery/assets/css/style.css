@@ -171,7 +171,7 @@ section.design-two {
 }
 
 .footer-nav a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -381,4 +381,85 @@ section.design-four {
     font-size: 14px;
     color: #666;
     padding: 10px 0;
+}
+
+section.design-five {
+  background-image: url('/pages/footer-gallery/assets/img/lantern-bg-2.png');
+  color: #fff;
+  padding: 30px 0;
+}
+
+.lantern-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 5px;
+}
+
+.lantern-left {
+  flex-basis: 40%;
+}
+
+.lantern-left h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.lantern-left p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.lantern-right {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stream-container,
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stream-icon,
+.booking-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stream-icon img,
+.booking-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.stream-container p,
+.booking-container p {
+  font-size: 18px;
 }
