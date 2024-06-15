@@ -34,14 +34,15 @@ section {
 section.design-one {
     background-color: #1a1a1a;
     color: #ffffff;
-    padding: 20px;
+    padding: 40px;
+    position: relative;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-right: 30px;
     padding-right: 30px;
     border-right: 2px #ffffff solid;
@@ -63,6 +64,7 @@ section.design-one {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .subscribe-text {
@@ -95,13 +97,27 @@ section.design-one {
 }
 
 .subscribe-btn {
-    background-color: #5A8DD3;
-    color: #fff;
+    background-color: #ECBF76;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     margin-left: 10px;
+}
+
+.paimon-logo-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+}
+
+.paimon-logo-container img {
+    width: 75%;
+    height: auto;
 }
 
 section.design-two {
