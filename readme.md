@@ -10,13 +10,13 @@
   <h3 align="center">Seatwork 3: Footer & Header</h3>
 </div>
 <div align="center">
-  This is for demonstrating skills in HTML and CSS with Multiple Pages, Effects and Container Manipulations. Providing a Different Versions of Headers and Footers.
+  This is for demonstrating skills in HTML and CSS with Multiple Pages, Effects and Container Manipulations. Providing a Different Versions of Headers and Footers.</p>
   This aims to showcase a collection of 5 different static header styles, 5 different static footer styles, 5 different animated header styles, and 5 different animated footer styles, all created using pure HTML and CSS. The project aims to provide a variety of header and footer designs that can be easily integrated into web development projects.
 </div>
 
 <br />
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Seatwork-3)
+![](https://visit-counter.vercel.app/counter.png?page=kylaandrade/WD-Seatwork-3)
 
 ---
 
