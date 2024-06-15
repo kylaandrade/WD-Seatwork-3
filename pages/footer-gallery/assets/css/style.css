@@ -121,52 +121,57 @@ section.design-one {
 }
 
 section.design-two {
-  background-color: #501403;
-  color: #fff;
-  padding: 40px 0;
-  width: 100%;
-  position: static;
-  bottom: 0;
-  left: 0;
-  text-align: center;
+    background-color: #501403;
+    color: #fff;
+    padding: 40px 0;
+    width: 100%;
+    position: static;
+    bottom: 0;
+    left: 0;
+    text-align: center;
 }
 
 .footer-content {
-  display: inline-block;
-  text-align: left;
+    display: inline-block;
+    text-align: center;
+    margin-left: 735px;
+}
+
+.tavern-logo-container {
+    margin-bottom: 20px;
+}
+
+.tavern-logo-container img {
+    max-width: 130px;
+    height: auto;
 }
 
 .footer-icons {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-bottom: 35px;
-  margin-left: 425px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 35px;
 }
 
 .footer-icon {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
 }
 
 .footer-icon img {
-  width: 100%;
-  height: 100%;
-  margin-left: 435px;
+    width: 100%;
+    height: 100%;
 }
 
 .footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .footer-nav a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
-.footer-nav a:hover {
-  color: #ccc;
-}
