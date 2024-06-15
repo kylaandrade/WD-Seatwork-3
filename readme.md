@@ -101,6 +101,7 @@ WD-ProjectName
 ## Resources
 
 | Title | Purpose | Link |
+|-|-|-|
 | Logo | Picture for ReadMe | https://www.canva.com |
 | Raiden Shogun | Picture for Landing Page | https://screenrant.com |
 | Paimon | Icon for Landing Page | https://www.redbubble.com |
